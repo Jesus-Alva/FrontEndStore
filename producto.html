@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <a href="index.html">
@@ -20,13 +22,34 @@
     <!--BEM metodologia para crear codigo reutilizable y ordenado con css-->
     <nav class="navegacion">
         <a class="navegacion__enlace" href="index.html">Tienda</a>
-        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a> 
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
     </nav>
     <main class="contenedor">
-        <h1>Producto</h1>
+        <h1>React JS</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/3.jpg" alt="Imagen del Producto">
+            <div class="camisa__contenido">
+                <p>Nam placerat convallis nisi, non rutrum sem facilisis a. Nullam consequat molestie euismod. Donec
+                    ultrices aliquam lectus lacinia placerat. Morbi aliquet auctor lorem. Nulla viverra molestie justo, ut
+                    dictum ligula venenatis sed. Cras sollicitudin mattis diam, sed varius mi tristique in. Ut urna massa,
+                    pharetra nec massa vel, maximus venenatis quam.</p>
+                    <form class="formulario">
+                        <select class="formulario__campo">
+                            <option disabled selected>Seleccionar talla</option>
+                            <option>chica</option>
+                            <option>mediana</option>
+                            <option>Grande</option>
+                        </select>
+                        <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                    </form>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <p class="footer__texto">FrontEnd Store - Todos los derechos reservados</p>
     </footer>
 </body>
+
 </html>
